@@ -1,4 +1,4 @@
-jQuery(document).on('click', '.jet-engine-user-popup-trigger', function(event) {
+jQuery(document).on('click', '.jet-engine-listing-popup-trigger', function(event) {
     event.preventDefault();
     const $button = jQuery(this);
     const objectType = $button.data('object-type');
