@@ -52,6 +52,8 @@ class Jet_Engine_Twig_Dynamic_Popup {
 					break;
 				case 'post':
 					$object = get_post($object_id);
+					global $post;
+                   			$post = $object;
 					break;
 				case 'term':
 					if ($taxonomy) {
