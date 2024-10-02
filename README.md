@@ -10,5 +10,5 @@ This plugin allows to add popups with dynamic data for Timber/Twig listings.
 **What the button attributes mean**
 - `class="jet-engine-listing-popup-trigger"` - `jet-engine-listing-popup-trigger` is a required class, which means this element will be trigger for the dynamic popup. You can add any other CSS classes you want to style the element in the way you need;
 - `data-object-type="user"` - defines the type of the object, which should be set for the popup. Possible options - post, user, comment and term. **Please note** for the `term` you also need to define the taxonomy to get the term object from - `term::category`
-- `data-object-id="{{ jet_engine_data(args={key:'post_id'}) }}"` - object ID. This is dynamic part. By this ID plugin sets appropriate object on the backend (or {{ post.ID }} or any function to get ID of required object).
+- `data-object-id="{{ jet_engine_data(args={key:'post_id'}) }}"` - object ID. This is dynamic part. By this ID plugin sets appropriate object on the backend (or `{{ post.ID }}` or any function to get ID of required object).
 - `data-open-popup="436"` - ID of the popup we need to open by click on this element
