@@ -45,6 +45,9 @@ class Jet_Engine_Twig_Dynamic_Popup {
 			$_GET['queried_object_id'] = $object_id;
 			$_REQUEST['queried_object_id'] = $object_id;
 
+			$data['postId'] = $object_id;
+			$data['isJetEngine'] = true;
+
 			$object = null;
 			switch ($object_type) {
 				case 'user':
